@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Lobster&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="leftside">
+            <div class="heading">
+                <h1>CALCULATOR</h1>
+                    <div class="part1">
+                        <input type="text" disabled value="" class="part1a" id="subInputVal">
+                        <input type="text" value="" class="part1b" id="inputval">
+                    </div>
+                    <div class="top">
+                        <button class="button" onclick="getValue('7')">7</button><button class="button" onclick="getValue('8')">8</button><button class="button" onclick="getValue('9')">9</button><button class="button" onclick="getValue('/')">/</button>
+                        <button class="button" onclick="getValue('4')">4</button><button class="button" onclick="getValue('5')">5</button><button class="button" onclick="getValue('6')">6</button><button class="button" onclick="getValue('*')">X</button>
+                        <button class="button" onclick="getValue('1')">1</button><button class="button" onclick="getValue('2')">2</button><button class="button" onclick="getValue('3')">3</button><button class="button" onclick="getValue('-')">-</button>
+                        <button class="button" onclick="clearAll()">CAN</button><button class="button" onclick="getValue('0')">0</button><button class="button" onclick="getValue('.')">.</button><button class="button" onclick="getValue('+')">+</button>
+                        <button class="button" onclick="removeLastDigit()">Cut</button><button class="button" onclick="getValue('%')">%</button><button class="button" onclick="solve()">=</button><button class="button" onclick="showHistory(equ,ans)">H</button>
+                    </div>
+                    </div>
+            </div>
+            <div id="rightside">
+              <div class="heading2">
+                <h1>HISTORY</h1>
+                </div>
+                <div id="historyBox">
+                  <div class="his">
+                    </div>
+                  </div>
+                <div>
+                  <button class="button1" onclick="clearHistory()">Delete</button>
+                  </div>
+              </div>
+             <script src="index.js"></script>
+    </body>
+</html>
